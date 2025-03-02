@@ -1,0 +1,10 @@
+import math
+a = int(input())
+b = int(input())
+c = int(input())
+cos_a = (b**2 + c**2 - a**2) / (2 * b * c)
+cos_b = (a**2 + c**2 - b**2) / (2 * a * c)
+cos_c = (a**2 + b**2 - c**2) / (2 * a * b)
+print(math.acos(cos_a)*180/math.pi)
+print(math.acos(cos_b)*180/math.pi)
+print(math.acos(cos_c)*180/math.pi)
