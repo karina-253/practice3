@@ -1,0 +1,8 @@
+N = int(input())
+C = int(input())
+num = int(input())
+import math
+page = math.ceil(num/(N*C))
+column = math.ceil((num-N*C)/N)
+line = math.ceil((num-N*C)/C)
+print('страница', page, 'столбец', column, 'строка', line)
