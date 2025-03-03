@@ -1,3 +1,7 @@
 raw = input('Enter number:')
-num = raw
-print(raw)
+try:
+    num = int(raw)
+except ValueError:
+    print('Error')
+else:
+ print(num)
