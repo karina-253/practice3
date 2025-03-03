@@ -4,5 +4,5 @@ num = int(input())
 import math
 page = math.ceil(num/(N*C))
 column = math.ceil((num-N*C)/N)
-line = math.ceil((num-N*C)/C)
+line = math.ceil((num-N*C)-N*(column-1))
 print('страница', page, 'столбец', column, 'строка', line)
